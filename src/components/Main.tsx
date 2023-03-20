@@ -8,11 +8,11 @@ type Props = {
     className?: string
 }
 const sites = [
-    { url: "https://twitter.com/jaketrent", name: "Twitter" },
-    { url: "https://facebook.com/jaketrent", name: "Facebook" },
-    { url: "https://instagram.com/jaketrent", name: "Instagram" },
-    { url: "https://linkedin.com/in/jaketrent", name: "LinkedIn" },
-    { url: "https://github.com/jaketrent", name: "GitHub" }
+    { url: "https://twitter.com/divyanshu", name: "Twitter" },
+    { url: "https://facebook.com/divyanshu", name: "Facebook" },
+    { url: "https://instagram.com/divyanshu", name: "Instagram" },
+    { url: "https://linkedin.com/in/divyanshu", name: "LinkedIn" },
+    { url: "https://github.com/divyanshu", name: "GitHub" }
   ];
 const Main = (props: Props) => {
     const isDesktopOrLaptop = useMediaQuery({
@@ -51,9 +51,10 @@ const Main = (props: Props) => {
         <Typewriter words={['Hello,👋' ]} loop={5} cursor />
         <div className='texthead'>I am</div>
         <div className='texthead'>Divyanshu Vashishth</div>
-        <div className='texthead'>
-            Software developer 🧑‍💻, Web-3 enthusiast
-        </div>
+        <div className='flex flex-row'>
+            <div className='texthead '>
+                Software developer</div> <div className='bg-transparent'>🧑‍💻</div><div className='texthead'>, Web-3 enthusiast</div>
+                </div>
         <div className='h-3 mt-5 space-x-2 justify-center'>
         {sites.map((site, i) => (
                 <SocialIcon key={i} url={site.url} className='flex flex-row text-sm bg-transparent' bgColor='black' fgColor='gray'/>

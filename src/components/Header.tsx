@@ -5,7 +5,6 @@ import logo from '../assets/logo1.svg'
 import logowhite from '../assets/logo2.svg'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { useMediaQuery } from 'react-responsive'
-import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll'
 
 import 'react-responsive-modal/styles.css';

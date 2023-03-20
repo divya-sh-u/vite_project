@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
 import {Header, Container, Footer,Main ,Projects, About, Skills, Contact}  from './components/index'
 
  // a ,h1 , button , img , div , p , span , ul , li , ol  

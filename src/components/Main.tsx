@@ -28,9 +28,10 @@ const Main = (props: Props) => {
             <Typewriter words={['Hello,👋 ' ]} loop={5} cursor={false} />
             <div className='texthead'>I am</div>
             <div className='texthead'>Divyanshu Vashishth</div>
-            <div className='texthead'>
-                Software developer 🧑‍💻, Web-3 enthusiast
-            </div>
+            <div className='flex flex-row'>
+            <div className='texthead '>
+                Software developer</div> <div className='bg-transparent'>🧑‍💻</div><div className='texthead'>, Web-3 enthusiast</div>
+                </div>
             <div className='h-3 mt-5 space-x-2 justify-center'>
             {sites.map((site, i) => (
                 <SocialIcon key={i} url={site.url} className='flex flex-row text-sm bg-transparent' bgColor='black' fgColor='gray'/>

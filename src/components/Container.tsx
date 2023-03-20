@@ -1,6 +1,6 @@
-import React, { Children } from 'react'
+import React from 'react'
 
-import { motion, useScroll } from "framer-motion"
+import { motion} from "framer-motion"
 type Props = {
     children: React.PropsWithChildren 
 }

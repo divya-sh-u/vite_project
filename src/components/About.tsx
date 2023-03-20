@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { motion } from 'framer-motion'
 import devdesk from '../assets/eduNavy.svg'
 import { useMediaQuery } from 'react-responsive'

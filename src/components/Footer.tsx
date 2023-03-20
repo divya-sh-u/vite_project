@@ -1,6 +1,4 @@
-import React from 'react'
-import { isMobile } from 'react-device-detect'
-import { useMediaQuery } from 'react-responsive'
+
 type Props = {
   className?: string
 }

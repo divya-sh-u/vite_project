@@ -1,7 +1,5 @@
-import React from 'react'
+
 import contact from '../assets/contactsNavy 1.svg'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import { AiOutlineMail } from 'react-icons/ai'
 import { useMediaQuery } from 'react-responsive'
 import {motion }from 'framer-motion'
 import { useForm } from 'react-hook-form';

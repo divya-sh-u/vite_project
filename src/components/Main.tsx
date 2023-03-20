@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useMediaQuery } from 'react-responsive'
 import { Typewriter } from 'react-simple-typewriter'
 import developer from '../assets/developer.svg' 

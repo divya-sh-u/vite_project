@@ -7,8 +7,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { useMediaQuery } from 'react-responsive'
 import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll'
-// import { Fragment } from 'react'
-// import { Menu } from '@headlessui/react'
+
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 const links = [

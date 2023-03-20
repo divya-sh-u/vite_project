@@ -1,4 +1,4 @@
-import React from 'react'
+
 import docker from '../techassets/docker-icon.svg'
 import git from '../techassets/github-actions.svg'
 import solidity from '../techassets/solidity.svg'
@@ -12,17 +12,14 @@ import redwood from '../techassets/redwoodjs.svg'
 import python from '../techassets/python.svg'
 import node from '../techassets/nodejs.svg'
 import postgres from '../techassets/postgresql.svg'
-import mongodb from '../techassets/mongodb.svg'
 import graphql from '../techassets/graphql.svg'
 import hardhat from '../techassets/hardhat-icon.svg'
 import ethereum from '../techassets/ethereum.svg'
 import visualstudio from '../techassets/visual-studio-code.svg'
 import figma from '../techassets/figma.svg'
 import mongodb2 from '../techassets/mongodb-icon.svg'
-type Props = {
-  className?: string
-}
-const Skills = ({className}:Props) => {
+
+const Skills = ({children}:React.PropsWithChildren) => {
 
   const Tech = [
     {

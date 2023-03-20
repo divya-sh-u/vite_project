@@ -35,7 +35,8 @@ jobs:
      name: Deploy
       needs: build
       runs-on: ubuntu-latest
-  
+      if: github.ref == 'refs/heads/main'
+
       steps:
         - name: Download production-ready files
           uses: actions/download-artifact@v2

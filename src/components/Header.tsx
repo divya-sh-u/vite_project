@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useTheme } from 'next-themes'
 import { FaSun, FaMoon } from 'react-icons/fa'
 import logo from '../assets/logo1.svg'
@@ -7,7 +7,16 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { useMediaQuery } from 'react-responsive'
 import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll'
-
+// import { Fragment } from 'react'
+// import { Menu } from '@headlessui/react'
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
+const links = [
+  { id: 'projects', label: 'Projects' },
+  { id: 'about', label: 'About' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'contact', label: 'Contact' },
+]
 
 
 const Header = ({children}:React.PropsWithChildren) => {
@@ -16,6 +25,9 @@ const Header = ({children}:React.PropsWithChildren) => {
     query: '(min-width: 1224px)'
   })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const [open, setOpen] = useState(false);
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
   return (
   <>
     {isDesktopOrLaptop && 
@@ -88,7 +100,27 @@ const Header = ({children}:React.PropsWithChildren) => {
     </div> */}
       {/* write the code to switch between dark and light mode */}
       <div className='flex  items-center  space-x-4 justify-end'>
-      <AiOutlineMenu className='w-8 h-8' />
+      <>
+      <button onClick={onOpenModal}>
+        <AiOutlineMenu className='w-8 h-8' />
+         </button>
+      <Modal  open={open} onClose={onCloseModal} center>
+        <div className='flex flex-col w-full'>
+      <Link className="navlink" to="contact" spy={true} smooth={true} offset={-70} duration={200}>
+       Projects
+         </Link>
+      <Link className="navlink" to="contact" spy={true} smooth={true} offset={-70} duration={200}>
+       About
+         </Link>
+      <Link className="navlink" to="contact" spy={true} smooth={true} offset={-70} duration={200}>
+       Skills
+         </Link>
+      <Link className="navlink" to="contact" spy={true} smooth={true} offset={-70} duration={200}>
+       Contact
+         </Link>
+         </div>
+      </Modal>
+    </>
         <button
           aria-label='Toggle Dark Mode'
           type='button'
